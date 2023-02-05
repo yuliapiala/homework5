@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        p{
+            color: palevioletred;
+        }
+        #blue{
+            color: blue;
+        }
+        .navy{
+            color: navy;
+        }
+        .navy.big{
+            color: yellow;
+        }
+        div ul{
+            color: green;
+        }
+        h5+p{
+            color: red;
+        }
+        #tittle5{
+            color: blueviolet;
+        }
+        .tittle5{
+            color: brown;
+        }
+        div ul.orange{
+            color: orange;
+        }
+        #olive{
+            color: olive;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <h3>Cелектори бувають:</h3>
+        <table>
+            <tr>
+                <td>* {}</td>
+                <td>-універсальний селектор відповідає будь-якому елементу на сторінці</td>
+            </tr>
+            <tr>
+                <td>а {}</td>
+                <td>-теговий селектор дозволяє задавати стіла для всіх елементів даного тегу</td>
+            </tr>
+            <tr>
+                <td>.class {}</td>
+                <td>-селектор класу дозволяє задавати стилі для елементів з однаковим іменем класу</td>
+            </tr>
+            <tr>
+                <td>#id {}</td>
+                <td>-селектор ідентифікатора дозволяє задавати для конкретного елементу, ідентифікатор визначає уникальне ім'я елемента</td>
+            </tr>
+            <tr>
+                <td>a b {}</td>
+                <td>-вкладені селектори,можна одночасно встановити стиль для окремого елемента, а також елемента, який знаходиться всередині іншого</td>
+            </tr>
+            <tr>
+                <td>a>b {}</td>
+                <td>-дочірні селектори, стиль застосовується до елемента b, тільки коли він є дочірнім елементом a</td>
+            </tr>
+            <tr>
+                <td>a+b {}</td>
+                <td>-cусідні селектори,стиль застосовується до елементів веб-сторінки, коли вони йдуть безпосередньо один за одним у коді документа</td>
+            </tr>
+            <tr>
+                <td>a~b {}</td>
+                <td>-споріднені селектори, стиль застосовується до елемента b у тому разі, якщо він має того самого батька, що й елемент a, і йде після нього</td>
+            </tr>
+            <tr>
+                <td>a[attr] {}</td>
+                <td>-селектор атрибута, встановлює стиль для елемента, якщо задано специфічний атрибут</td>
+            </tr>
+        </table>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque sapiente mollitia earum consequatur perspiciatis modi architecto nesciunt corporis accusamus, reprehenderit praesentium expedita officiis assumenda doloribus sequi id deleniti. Suscipit.
+        </p>
+        <p id="blue">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas doloremque ad consequatur ut, nulla obcaecati, dignissimos optio sint ullam exercitationem nisi, excepturi ratione accusamus rerum! Consequuntur perspiciatis quam atque.
+        </p>
+        <p class="navy">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita a. Quasi ad quibusdam consectetur nesciunt minima non at animi accusantium quisquam ratione porro doloremque ea, illum ex aspernatur commodi!
+        </p>
+        <p class="navy big">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum consectetur enim maiores alias necessitatibus, facilis perspiciatis voluptatem et nihil corrupti quos exercitationem, commodi praesentium? Porro quibusdam quos possimus culpa eos!
+        </p>
+        <div>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae cumque laudantium ullam molestias error? Possimus architecto, provident delectus dicta voluptatem placeat animi est vitae rerum ipsum, in, sed adipisci cupiditate!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur optio a molestiae ut nobis, amet eius, voluptatem, illo est omnis. Eos delectus illum nisi explicabo quis, quisquam corrupti reprehenderit.</li>
+            </ul>
+        </div>
+        <div>
+            <h5 id="tittle5">tittle</h5>
+            <p>text</p>
+            <h5 class="tittle5">tittle</h5>
+            <p>text</p>
+        </div>
+        <div>
+            <ul class="orange">
+                <li>text</li>
+                <li>text</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li id="olive">text</li>
+                <li>text</li>
+            </ul>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
